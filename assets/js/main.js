@@ -1,5 +1,5 @@
 /* ==========================================================
-   SecretIA — interactions
+   Sawubona — interactions
    ========================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -59,11 +59,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const cookieBanner = document.getElementById('cookieBanner');
   const cookieAccept = document.getElementById('cookieAccept');
   if (cookieBanner && cookieAccept) {
-    if (!localStorage.getItem('secretia_cookie_consent')) {
+    if (!localStorage.getItem('sawubona_cookie_consent')) {
       cookieBanner.classList.add('is-visible');
     }
     cookieAccept.addEventListener('click', () => {
-      localStorage.setItem('secretia_cookie_consent', '1');
+      localStorage.setItem('sawubona_cookie_consent', '1');
       cookieBanner.classList.remove('is-visible');
     });
   }
