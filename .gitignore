@@ -1,0 +1,5 @@
+.env
+leads.csv
+suppression_list.txt
+__pycache__/
+*.pyc
