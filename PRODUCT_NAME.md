@@ -1,40 +1,46 @@
-# Nom de produit : Sawubona
+# Nom de produit : EZreceptionist
 
 ## Décision
 
-**Sawubona** a été retenu comme nom pour le produit de réceptionniste/secrétariat IA.
+**EZreceptionist** est le nom retenu (choix final, remplace le finaliste précédent *Sawubona* —
+voir tableau des noms écartés) pour le produit de réceptionniste/secrétariat IA.
 
-## Origine et sens
+## Identité visuelle
 
-Mot zoulou (Afrique du Sud) signifiant littéralement **"je te vois"**. Utilisé traditionnellement
-comme salutation, il porte un sens plus profond que "bonjour" : on reconnaît et on accueille
-pleinement la personne en face de soi. Un ajustement naturel pour un produit dont le rôle est
-justement de voir, reconnaître et accueillir chaque appelant.
+Logo choisi par l'utilisateur (hors génération Canva) :
+
+- **Icône** : cercle formé d'un arc bleu marine et d'un arc sarcelle, encadré de deux paires de
+  barres façon onde sonore (vert menthe / sarcelle) — évoque un appel en cours / une voix qui
+  répond.
+- **Typographie** : "EZ" en gras bleu marine, "receptionist" en plus fin, gris/marine clair.
+- **Tagline** : *"Never miss a call"*.
+- **Palette** : bleu marine foncé (texte, arc principal), sarcelle/turquoise (arc secondaire,
+  accent), vert menthe clair (barres d'onde sonore), fond blanc/gris très clair.
+
+Des pistes alternatives avaient été générées via Canva (génération IA, palette
+navy/sarcelle + accent chaud) mais aucune n'a été retenue — le logo final vient d'ailleurs.
 
 ## Pourquoi ce nom
 
-- Aucun concurrent direct trouvé dans le secteur de l'accueil téléphonique / réceptionniste IA.
-- Le seul usage croisé identifié est **Ashford Sawubona Group GmbH** (Allemagne), une entreprise
-  de boissons/restauration — secteur totalement différent (classe de marque non conflictuelle).
-- Quelques petites structures sud-africaines (data tech, appli d'apprentissage de langues,
-  association caritative) utilisent aussi le mot, mais aucune dans le logiciel B2B ou la
-  téléphonie.
-- Le domaine **sawubona.ai** ne résout à aucune adresse DNS au moment de la recherche — signe
-  probable de disponibilité.
-- Le handle exact `@sawubona` est déjà utilisé sur les réseaux sociaux par plusieurs petites
-  structures locales (aucune n'étant une marque déposée majeure) — prévoir un handle avec
-  suffixe (`@getsawubona`, `@sawubonahq`, `@sawubonaapp`...).
+- Aucune collision exacte trouvée pour "EZreceptionist" / "EZ Receptionist".
+- Point de vigilance : **"The Receptionist"** existe déjà (logiciel de gestion de visiteurs sur
+  iPad, bien établi) — nom proche, à garder à l'esprit en positionnement/SEO.
+- Point de vigilance : **"receptionist"** est un terme purement descriptif du métier — plus
+  difficile à protéger comme marque forte à lui seul ; le préfixe "EZ" apporte une distinctivité
+  minimale mais reste un nom composé de mots génériques.
+- Convention de nommage "EZ-" très répandue dans le SaaS (EzCater, EZproxy, EzyBiz...) — bon
+  signal de familiarité, mais dilue un peu la mémorabilité pure.
 
 ## À vérifier avant engagement définitif
 
 Cette recherche a été faite via recherche web et n'a pas la valeur d'une vérification légale
 formelle. Avant tout dépôt de marque ou achat de domaine :
 
-1. **WHOIS** précis sur sawubona.com / .io / .ai (accès direct non disponible depuis cet
-   environnement de recherche).
+1. **WHOIS** précis sur ezreceptionist.com / .io / .ai.
 2. **Recherche de marque officielle** en classe logiciel/télécom (classe 9, 38, 42) — INPI pour
-   la France, EUIPO pour l'UE, USPTO si ambition internationale.
-3. Confirmer qu'aucun usage récent (post-recherche) n'est apparu dans le secteur.
+   la France, EUIPO pour l'UE, USPTO si ambition internationale — en particulier vérifier
+   l'absence de conflit avec "The Receptionist".
+3. Confirmer la disponibilité des handles réseaux sociaux (`@ezreceptionist` ou variante).
 
 ## Noms écartés en cours de route
 
@@ -60,4 +66,5 @@ formelle. Avant tout dépôt de marque ou achat de domaine :
 | Gaston | Risque de conflit avec les droits (activement défendus) de Gaston Lagaffe / Éditions Dupuis |
 | Bigo | Conflit majeur avec Bigo Live (appli de live-streaming mondiale) |
 | Vigie | Alternative propre mais 100% française, ne "sonne" pas anglais |
-| Foyer | Alternative propre, fonctionne en FR/EN mais moins de caractère distinctif que Sawubona |
+| Foyer | Alternative propre, fonctionne en FR/EN mais moins de caractère distinctif |
+| Sawubona | Finaliste précédent (aucune collision trouvée) — remplacé par EZreceptionist, trouvé indépendamment par l'utilisateur |
