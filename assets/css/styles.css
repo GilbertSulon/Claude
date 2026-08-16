@@ -1,5 +1,5 @@
 /* ==========================================================
-   Sawubona — styles
+   EZ receptionist — styles
    ========================================================== */
 
 :root{
@@ -120,9 +120,10 @@ button{ font-family: inherit; }
   height: 76px;
   gap: 20px;
 }
-.brand{ display:flex; align-items:center; gap:9px; flex-shrink: 0; }
+.brand{ display:flex; align-items:center; gap:10px; flex-shrink: 0; }
 .brand-mark{ display:flex; }
-.brand-name{ font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; color: var(--text); }
+.brand-name{ font-family: var(--font-display); font-weight: 500; font-size: 1.15rem; color: var(--text); white-space: nowrap; }
+.brand-name-strong{ font-weight: 800; }
 
 .main-nav{ display:flex; align-items:center; gap: 24px; flex-shrink: 0; }
 .main-nav a{

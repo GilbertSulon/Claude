@@ -1,6 +1,7 @@
 /* ==========================================================
-   Sawubona — i18n (FR / NL / DE / EN)
+   EZ receptionist — i18n (FR / NL / DE / EN)
    ========================================================== */
+
 
 const SUPPORTED_LANGS = ['fr', 'nl', 'de', 'en'];
 const DEFAULT_LANG = 'fr';
@@ -8,8 +9,8 @@ const DEFAULT_LANG = 'fr';
 const I18N = {
   fr: {
     "a11y.skip": "Aller au contenu",
-    "meta.title": "Sawubona — Ne manquez plus aucun appel",
-    "meta.description": "Sawubona est la réception IA qui répond à vos appels, prend vos rendez-vous, vérifie chaque client et confirme par SMS — avec un relais humain uniquement si nécessaire.",
+    "meta.title": "EZ receptionist — Ne manquez plus aucun appel",
+    "meta.description": "EZ receptionist est la réception IA qui répond à vos appels, prend vos rendez-vous, vérifie chaque client et confirme par SMS — avec un relais humain uniquement si nécessaire.",
 
     "nav.features": "Fonctionnalités",
     "nav.how": "Comment ça marche",
@@ -21,7 +22,7 @@ const I18N = {
 
     "hero.eyebrow": "Réception IA pour PME",
     "hero.title": "Ne manquez plus aucun appel",
-    "hero.sub": "Sawubona répond à vos appels, accueille vos clients avec professionnalisme et prend en charge leurs rendez-vous — même quand vous êtes occupé. Elle ne passe le relais à votre équipe que lorsque c'est vraiment nécessaire.",
+    "hero.sub": "EZ receptionist répond à vos appels, accueille vos clients avec professionnalisme et prend en charge leurs rendez-vous — même quand vous êtes occupé. Elle ne passe le relais à votre équipe que lorsque c'est vraiment nécessaire.",
     "hero.ctaPrimary": "Demander une démo gratuite",
     "hero.ctaSecondary": "Voir comment ça marche",
     "hero.trust": "Conçu pour les PME qui veulent rester joignables, sans surcharge pour leurs équipes.",
@@ -53,9 +54,9 @@ const I18N = {
 
     "features.eyebrow": "Fonctionnalités",
     "features.title": "Un accueil professionnel, à chaque appel",
-    "features.lead": "Sawubona prend en charge l'intégralité de l'appel : accueil, prise de rendez-vous, vérification du client et confirmation.",
+    "features.lead": "EZ receptionist prend en charge l'intégralité de l'appel : accueil, prise de rendez-vous, vérification du client et confirmation.",
     "features.f1.title": "Prise de rendez-vous automatique",
-    "features.f1.body": "Sawubona comprend la demande, consulte votre agenda en temps réel et propose immédiatement un créneau disponible.",
+    "features.f1.body": "EZ receptionist comprend la demande, consulte votre agenda en temps réel et propose immédiatement un créneau disponible.",
     "features.f2.title": "Gestion complète de l'agenda",
     "features.f2.body": "Modification, annulation, rappel : votre planning est mis à jour à chaque appel, sans double réservation.",
     "features.f3.title": "Validation du client",
@@ -70,8 +71,8 @@ const I18N = {
     "how.eyebrow": "Comment ça marche",
     "how.title": "Un appel, quatre étapes, toujours le même accueil",
     "how.s1.title": "Le client appelle votre numéro habituel",
-    "how.s1.body": "Pas de nouveau numéro à communiquer : Sawubona se branche sur votre ligne existante.",
-    "how.s2.title": "Sawubona décroche et comprend la demande",
+    "how.s1.body": "Pas de nouveau numéro à communiquer : EZ receptionist se branche sur votre ligne existante.",
+    "how.s2.title": "EZ receptionist décroche et comprend la demande",
     "how.s2.body": "Une conversation naturelle, dans la langue du client, pour cerner précisément le besoin.",
     "how.s3.title": "Rendez-vous pris, client validé, SMS envoyé",
     "how.s3.body": "L'agenda est mis à jour en temps réel et la confirmation part immédiatement par SMS.",
@@ -118,7 +119,7 @@ const I18N = {
     "faq.eyebrow": "Questions fréquentes",
     "faq.title": "Tout savoir avant de se lancer",
     "faq.q1.q": "Dois-je changer de numéro de téléphone ?",
-    "faq.q1.a": "Non. Sawubona se connecte à votre ligne existante, vos clients composent le même numéro qu'aujourd'hui.",
+    "faq.q1.a": "Non. EZ receptionist se connecte à votre ligne existante, vos clients composent le même numéro qu'aujourd'hui.",
     "faq.q2.q": "Combien de temps pour la mise en place ?",
     "faq.q2.a": "En général une à deux semaines, selon la complexité de votre agenda et de vos outils actuels.",
     "faq.q3.q": "Mes données clients sont-elles protégées ?",
@@ -131,7 +132,7 @@ const I18N = {
     "faq.q6.a": "Oui, une démo gratuite et une période d'essai sont proposées avant tout engagement.",
 
     "contact.eyebrow": "Démo gratuite",
-    "contact.title": "Voyez Sawubona à l'œuvre sur vos propres cas d'usage",
+    "contact.title": "Voyez EZ receptionist à l'œuvre sur vos propres cas d'usage",
     "contact.lead": "Laissez-nous vos coordonnées, notre équipe vous recontacte sous 24h ouvrées pour organiser une démonstration personnalisée.",
     "contact.p1": "✔ Sans engagement",
     "contact.p2": "✔ Installation sur votre ligne existante",
@@ -161,7 +162,7 @@ const I18N = {
     "footer.terms": "Mentions légales",
     "footer.privacy": "Confidentialité",
     "footer.cgv": "CGV",
-    "footer.copyright": "© 2026 Sawubona. Tous droits réservés.",
+    "footer.copyright": "© 2026 EZ receptionist. Tous droits réservés.",
 
     "cookie.text": "Ce site utilise des cookies essentiels à son bon fonctionnement.",
     "cookie.accept": "J'accepte"
@@ -169,8 +170,8 @@ const I18N = {
 
   nl: {
     "a11y.skip": "Naar de inhoud",
-    "meta.title": "Sawubona — Mis nooit meer een oproep",
-    "meta.description": "Sawubona is de AI-receptie die uw oproepen beantwoordt, afspraken boekt, elke beller controleert en bevestigt per sms — met doorschakeling naar een mens enkel indien nodig.",
+    "meta.title": "EZ receptionist — Mis nooit meer een oproep",
+    "meta.description": "EZ receptionist is de AI-receptie die uw oproepen beantwoordt, afspraken boekt, elke beller controleert en bevestigt per sms — met doorschakeling naar een mens enkel indien nodig.",
 
     "nav.features": "Functies",
     "nav.how": "Hoe het werkt",
@@ -182,7 +183,7 @@ const I18N = {
 
     "hero.eyebrow": "AI-receptie voor kmo's",
     "hero.title": "Mis nooit meer een oproep",
-    "hero.sub": "Sawubona neemt uw oproepen op, onthaalt uw klanten professioneel en regelt hun afspraken — zelfs wanneer u bezet bent. Ze schakelt pas door naar uw team wanneer dat echt nodig is.",
+    "hero.sub": "EZ receptionist neemt uw oproepen op, onthaalt uw klanten professioneel en regelt hun afspraken — zelfs wanneer u bezet bent. Ze schakelt pas door naar uw team wanneer dat echt nodig is.",
     "hero.ctaPrimary": "Vraag een gratis demo aan",
     "hero.ctaSecondary": "Bekijk hoe het werkt",
     "hero.trust": "Ontworpen voor kmo's die bereikbaar willen blijven, zonder hun team te overbelasten.",
@@ -214,9 +215,9 @@ const I18N = {
 
     "features.eyebrow": "Functies",
     "features.title": "Een professioneel onthaal, bij elke oproep",
-    "features.lead": "Sawubona beheert het volledige gesprek: onthaal, afspraakplanning, klantvalidatie en bevestiging.",
+    "features.lead": "EZ receptionist beheert het volledige gesprek: onthaal, afspraakplanning, klantvalidatie en bevestiging.",
     "features.f1.title": "Automatische afspraakplanning",
-    "features.f1.body": "Sawubona begrijpt de vraag, raadpleegt uw agenda in real time en stelt meteen een beschikbaar tijdstip voor.",
+    "features.f1.body": "EZ receptionist begrijpt de vraag, raadpleegt uw agenda in real time en stelt meteen een beschikbaar tijdstip voor.",
     "features.f2.title": "Volledig agendabeheer",
     "features.f2.body": "Wijzigen, annuleren, herinneren: uw planning wordt bij elk gesprek bijgewerkt, zonder dubbele boekingen.",
     "features.f3.title": "Validatie van de klant",
@@ -231,8 +232,8 @@ const I18N = {
     "how.eyebrow": "Hoe het werkt",
     "how.title": "Eén gesprek, vier stappen, steeds hetzelfde onthaal",
     "how.s1.title": "De klant belt uw gebruikelijke nummer",
-    "how.s1.body": "Geen nieuw nummer nodig: Sawubona wordt gekoppeld aan uw bestaande lijn.",
-    "how.s2.title": "Sawubona neemt op en begrijpt de vraag",
+    "how.s1.body": "Geen nieuw nummer nodig: EZ receptionist wordt gekoppeld aan uw bestaande lijn.",
+    "how.s2.title": "EZ receptionist neemt op en begrijpt de vraag",
     "how.s2.body": "Een natuurlijk gesprek, in de taal van de klant, om de behoefte precies te achterhalen.",
     "how.s3.title": "Afspraak gemaakt, klant gevalideerd, sms verzonden",
     "how.s3.body": "De agenda wordt in real time bijgewerkt en de bevestiging wordt meteen per sms verstuurd.",
@@ -279,7 +280,7 @@ const I18N = {
     "faq.eyebrow": "Veelgestelde vragen",
     "faq.title": "Alles wat u moet weten voordat u start",
     "faq.q1.q": "Moet ik van telefoonnummer veranderen?",
-    "faq.q1.a": "Nee. Sawubona wordt gekoppeld aan uw bestaande lijn, uw klanten bellen hetzelfde nummer als vandaag.",
+    "faq.q1.a": "Nee. EZ receptionist wordt gekoppeld aan uw bestaande lijn, uw klanten bellen hetzelfde nummer als vandaag.",
     "faq.q2.q": "Hoelang duurt de implementatie?",
     "faq.q2.a": "Doorgaans één tot twee weken, afhankelijk van de complexiteit van uw agenda en huidige tools.",
     "faq.q3.q": "Zijn mijn klantgegevens beschermd?",
@@ -292,7 +293,7 @@ const I18N = {
     "faq.q6.a": "Ja, een gratis demo en een proefperiode worden aangeboden vóór elke verbintenis.",
 
     "contact.eyebrow": "Gratis demo",
-    "contact.title": "Ontdek Sawubona aan de hand van uw eigen use cases",
+    "contact.title": "Ontdek EZ receptionist aan de hand van uw eigen use cases",
     "contact.lead": "Laat ons uw gegevens achter, ons team neemt binnen 24 werkuren contact met u op voor een demonstratie op maat.",
     "contact.p1": "✔ Vrijblijvend",
     "contact.p2": "✔ Installatie op uw bestaande lijn",
@@ -322,7 +323,7 @@ const I18N = {
     "footer.terms": "Wettelijke vermeldingen",
     "footer.privacy": "Privacybeleid",
     "footer.cgv": "Algemene voorwaarden",
-    "footer.copyright": "© 2026 Sawubona. Alle rechten voorbehouden.",
+    "footer.copyright": "© 2026 EZ receptionist. Alle rechten voorbehouden.",
 
     "cookie.text": "Deze site gebruikt cookies die essentieel zijn voor de werking ervan.",
     "cookie.accept": "Ik ga akkoord"
@@ -330,8 +331,8 @@ const I18N = {
 
   de: {
     "a11y.skip": "Zum Inhalt springen",
-    "meta.title": "Sawubona — Verpassen Sie nie wieder einen Anruf",
-    "meta.description": "Sawubona ist die KI-Rezeption, die Ihre Anrufe entgegennimmt, Termine bucht, jeden Anrufer verifiziert und per SMS bestätigt — mit Weiterleitung an einen Mitarbeiter nur wenn nötig.",
+    "meta.title": "EZ receptionist — Verpassen Sie nie wieder einen Anruf",
+    "meta.description": "EZ receptionist ist die KI-Rezeption, die Ihre Anrufe entgegennimmt, Termine bucht, jeden Anrufer verifiziert und per SMS bestätigt — mit Weiterleitung an einen Mitarbeiter nur wenn nötig.",
 
     "nav.features": "Funktionen",
     "nav.how": "So funktioniert's",
@@ -343,7 +344,7 @@ const I18N = {
 
     "hero.eyebrow": "KI-Rezeption für KMU",
     "hero.title": "Verpassen Sie nie wieder einen Anruf",
-    "hero.sub": "Sawubona nimmt Ihre Anrufe entgegen, empfängt Ihre Kunden professionell und kümmert sich um deren Termine — auch wenn Sie beschäftigt sind. Nur wenn es wirklich nötig ist, wird an Ihr Team weitergeleitet.",
+    "hero.sub": "EZ receptionist nimmt Ihre Anrufe entgegen, empfängt Ihre Kunden professionell und kümmert sich um deren Termine — auch wenn Sie beschäftigt sind. Nur wenn es wirklich nötig ist, wird an Ihr Team weitergeleitet.",
     "hero.ctaPrimary": "Kostenlose Demo anfragen",
     "hero.ctaSecondary": "So funktioniert's ansehen",
     "hero.trust": "Entwickelt für KMU, die erreichbar bleiben wollen, ohne ihr Team zu überlasten.",
@@ -375,9 +376,9 @@ const I18N = {
 
     "features.eyebrow": "Funktionen",
     "features.title": "Ein professioneller Empfang, bei jedem Anruf",
-    "features.lead": "Sawubona übernimmt das gesamte Gespräch: Empfang, Terminvereinbarung, Kundenprüfung und Bestätigung.",
+    "features.lead": "EZ receptionist übernimmt das gesamte Gespräch: Empfang, Terminvereinbarung, Kundenprüfung und Bestätigung.",
     "features.f1.title": "Automatische Terminvereinbarung",
-    "features.f1.body": "Sawubona versteht die Anfrage, prüft Ihren Kalender in Echtzeit und schlägt sofort einen freien Termin vor.",
+    "features.f1.body": "EZ receptionist versteht die Anfrage, prüft Ihren Kalender in Echtzeit und schlägt sofort einen freien Termin vor.",
     "features.f2.title": "Vollständige Terminverwaltung",
     "features.f2.body": "Ändern, stornieren, erinnern: Ihr Kalender wird bei jedem Anruf aktualisiert – ganz ohne Doppelbuchungen.",
     "features.f3.title": "Kundenverifizierung",
@@ -392,8 +393,8 @@ const I18N = {
     "how.eyebrow": "So funktioniert's",
     "how.title": "Ein Anruf, vier Schritte, immer derselbe Empfang",
     "how.s1.title": "Der Kunde ruft Ihre gewohnte Nummer an",
-    "how.s1.body": "Keine neue Nummer nötig: Sawubona wird direkt an Ihre bestehende Leitung angebunden.",
-    "how.s2.title": "Sawubona nimmt ab und versteht das Anliegen",
+    "how.s1.body": "Keine neue Nummer nötig: EZ receptionist wird direkt an Ihre bestehende Leitung angebunden.",
+    "how.s2.title": "EZ receptionist nimmt ab und versteht das Anliegen",
     "how.s2.body": "Ein natürliches Gespräch in der Sprache des Kunden, um das Anliegen genau zu erfassen.",
     "how.s3.title": "Termin vereinbart, Kunde geprüft, SMS versendet",
     "how.s3.body": "Der Kalender wird in Echtzeit aktualisiert und die Bestätigung wird sofort per SMS versendet.",
@@ -440,7 +441,7 @@ const I18N = {
     "faq.eyebrow": "Häufig gestellte Fragen",
     "faq.title": "Alles Wichtige vor dem Start",
     "faq.q1.q": "Muss ich meine Telefonnummer ändern?",
-    "faq.q1.a": "Nein. Sawubona wird an Ihre bestehende Leitung angeschlossen – Ihre Kunden wählen dieselbe Nummer wie bisher.",
+    "faq.q1.a": "Nein. EZ receptionist wird an Ihre bestehende Leitung angeschlossen – Ihre Kunden wählen dieselbe Nummer wie bisher.",
     "faq.q2.q": "Wie lange dauert die Einrichtung?",
     "faq.q2.a": "In der Regel ein bis zwei Wochen, abhängig von der Komplexität Ihres Kalenders und Ihrer aktuellen Tools.",
     "faq.q3.q": "Sind meine Kundendaten geschützt?",
@@ -453,7 +454,7 @@ const I18N = {
     "faq.q6.a": "Ja, vor jeder Verpflichtung bieten wir eine kostenlose Demo und eine Testphase an.",
 
     "contact.eyebrow": "Kostenlose Demo",
-    "contact.title": "Erleben Sie Sawubona anhand Ihrer eigenen Anwendungsfälle",
+    "contact.title": "Erleben Sie EZ receptionist anhand Ihrer eigenen Anwendungsfälle",
     "contact.lead": "Hinterlassen Sie uns Ihre Kontaktdaten – unser Team meldet sich innerhalb von 24 Werkstunden für eine persönliche Demo.",
     "contact.p1": "✔ Unverbindlich",
     "contact.p2": "✔ Einrichtung auf Ihrer bestehenden Leitung",
@@ -483,7 +484,7 @@ const I18N = {
     "footer.terms": "Impressum",
     "footer.privacy": "Datenschutz",
     "footer.cgv": "AGB",
-    "footer.copyright": "© 2026 Sawubona. Alle Rechte vorbehalten.",
+    "footer.copyright": "© 2026 EZ receptionist. Alle Rechte vorbehalten.",
 
     "cookie.text": "Diese Website verwendet für ihren Betrieb notwendige Cookies.",
     "cookie.accept": "Ich stimme zu"
@@ -491,8 +492,8 @@ const I18N = {
 
   en: {
     "a11y.skip": "Skip to content",
-    "meta.title": "Sawubona — Never miss a call",
-    "meta.description": "Sawubona is the AI receptionist that answers your calls, books appointments, verifies every caller and confirms by SMS — with a human handoff only when necessary.",
+    "meta.title": "EZ receptionist — Never miss a call",
+    "meta.description": "EZ receptionist is the AI receptionist that answers your calls, books appointments, verifies every caller and confirms by SMS — with a human handoff only when necessary.",
 
     "nav.features": "Features",
     "nav.how": "How it works",
@@ -504,7 +505,7 @@ const I18N = {
 
     "hero.eyebrow": "AI reception for SMEs",
     "hero.title": "Never miss a call",
-    "hero.sub": "Sawubona answers your calls, greets your customers professionally, and takes care of their appointments — even when you're busy. It hands off to your team only when it's truly necessary.",
+    "hero.sub": "EZ receptionist answers your calls, greets your customers professionally, and takes care of their appointments — even when you're busy. It hands off to your team only when it's truly necessary.",
     "hero.ctaPrimary": "Request a free demo",
     "hero.ctaSecondary": "See how it works",
     "hero.trust": "Built for SMEs that want to stay reachable, without overloading their team.",
@@ -536,9 +537,9 @@ const I18N = {
 
     "features.eyebrow": "Features",
     "features.title": "A professional welcome, on every call",
-    "features.lead": "Sawubona handles the entire call: greeting, booking, caller verification, and confirmation.",
+    "features.lead": "EZ receptionist handles the entire call: greeting, booking, caller verification, and confirmation.",
     "features.f1.title": "Automatic appointment booking",
-    "features.f1.body": "Sawubona understands the request, checks your calendar in real time and instantly offers an available slot.",
+    "features.f1.body": "EZ receptionist understands the request, checks your calendar in real time and instantly offers an available slot.",
     "features.f2.title": "Full calendar management",
     "features.f2.body": "Reschedule, cancel, remind: your schedule is updated on every call, with no double bookings.",
     "features.f3.title": "Caller validation",
@@ -553,8 +554,8 @@ const I18N = {
     "how.eyebrow": "How it works",
     "how.title": "One call, four steps, the same welcome every time",
     "how.s1.title": "The caller dials your usual number",
-    "how.s1.body": "No new number to share: Sawubona connects directly to your existing line.",
-    "how.s2.title": "Sawubona answers and understands the request",
+    "how.s1.body": "No new number to share: EZ receptionist connects directly to your existing line.",
+    "how.s2.title": "EZ receptionist answers and understands the request",
     "how.s2.body": "A natural conversation, in the caller's language, to pinpoint exactly what they need.",
     "how.s3.title": "Appointment booked, caller validated, SMS sent",
     "how.s3.body": "The calendar is updated in real time and the confirmation is sent immediately by SMS.",
@@ -601,7 +602,7 @@ const I18N = {
     "faq.eyebrow": "Frequently asked questions",
     "faq.title": "Everything you need to know before you start",
     "faq.q1.q": "Do I need to change my phone number?",
-    "faq.q1.a": "No. Sawubona connects to your existing line, so your customers dial the same number as today.",
+    "faq.q1.a": "No. EZ receptionist connects to your existing line, so your customers dial the same number as today.",
     "faq.q2.q": "How long does setup take?",
     "faq.q2.a": "Typically one to two weeks, depending on the complexity of your calendar and current tools.",
     "faq.q3.q": "Is my customer data protected?",
@@ -614,7 +615,7 @@ const I18N = {
     "faq.q6.a": "Yes, a free demo and a trial period are offered before any commitment.",
 
     "contact.eyebrow": "Free demo",
-    "contact.title": "See Sawubona in action on your own use cases",
+    "contact.title": "See EZ receptionist in action on your own use cases",
     "contact.lead": "Leave us your details and our team will get back to you within 24 business hours to arrange a personalized demo.",
     "contact.p1": "✔ No commitment",
     "contact.p2": "✔ Set up on your existing phone line",
@@ -644,7 +645,7 @@ const I18N = {
     "footer.terms": "Legal notice",
     "footer.privacy": "Privacy policy",
     "footer.cgv": "Terms of service",
-    "footer.copyright": "© 2026 Sawubona. All rights reserved.",
+    "footer.copyright": "© 2026 EZ receptionist. All rights reserved.",
 
     "cookie.text": "This site uses cookies essential to its operation.",
     "cookie.accept": "Accept"
@@ -652,7 +653,7 @@ const I18N = {
 };
 
 function getInitialLang(){
-  const stored = localStorage.getItem('sawubona_lang');
+  const stored = localStorage.getItem('ezreceptionist_lang');
   if (stored && SUPPORTED_LANGS.includes(stored)) return stored;
 
   const nav = (navigator.language || navigator.userLanguage || '').slice(0, 2).toLowerCase();
@@ -679,7 +680,7 @@ function applyLanguage(lang){
     btn.classList.toggle('is-active', btn.getAttribute('data-lang') === lang);
   });
 
-  localStorage.setItem('sawubona_lang', lang);
+  localStorage.setItem('ezreceptionist_lang', lang);
 }
 
 function setLanguage(lang){
