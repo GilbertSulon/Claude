@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<script src="assets/js/maintenance-check.js" data-mode="site"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EZ receptionist — Ne manquez plus aucun appel</title>
+<meta name="description" content="EZ receptionist est la réception IA qui répond à vos appels, prend vos rendez-vous, vérifie chaque client et confirme par SMS — avec un relais humain uniquement si nécessaire.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 130%22><rect x=%2214%22 y=%2248%22 width=%2214%22 height=%2234%22 rx=%227%22 fill=%22%2383CAA8%22/><rect x=%2234%22 y=%2230%22 width=%2214%22 height=%2270%22 rx=%227%22 fill=%22%2383CAA8%22/><rect x=%22156%22 y=%2230%22 width=%2214%22 height=%2270%22 rx=%227%22 fill=%22%2306B6D4%22/><rect x=%22176%22 y=%2248%22 width=%2214%22 height=%2234%22 rx=%227%22 fill=%22%2306B6D4%22/><circle cx=%22100%22 cy=%2263%22 r=%2246%22 fill=%22none%22 stroke=%22%230F172A%22 stroke-width=%2226%22 stroke-linecap=%22round%22 stroke-dasharray=%22112.4 400%22 transform=%22rotate(-160 100 63)%22/><circle cx=%22100%22 cy=%2263%22 r=%2246%22 fill=%22none%22 stroke=%22%2306B6D4%22 stroke-width=%2226%22 stroke-linecap=%22round%22 stroke-dasharray=%22112.4 400%22 transform=%22rotate(20 100 63)%22/></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<!-- Skip link -->
+<a class="skip-link" href="#main" data-i18n="a11y.skip">Aller au contenu</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="36" height="23" viewBox="0 0 200 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="14" y="48" width="14" height="34" rx="7" fill="#83CAA8"/>
+          <rect x="34" y="30" width="14" height="70" rx="7" fill="#83CAA8"/>
+          <rect x="156" y="30" width="14" height="70" rx="7" fill="#06B6D4"/>
+          <rect x="176" y="48" width="14" height="34" rx="7" fill="#06B6D4"/>
+          <circle cx="100" cy="63" r="46" fill="none" stroke="#0F172A" stroke-width="26" stroke-linecap="round" stroke-dasharray="112.4 400" transform="rotate(-160 100 63)"/>
+          <circle cx="100" cy="63" r="46" fill="none" stroke="#06B6D4" stroke-width="26" stroke-linecap="round" stroke-dasharray="112.4 400" transform="rotate(20 100 63)"/>
+        </svg>
+      </span>
+      <span class="brand-name"><span class="brand-name-strong">EZ</span> receptionist</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+      <a href="#features" data-i18n="nav.features">Fonctionnalités</a>
+      <a href="#how" data-i18n="nav.how">Comment ça marche</a>
+      <a href="#sectors" data-i18n="nav.sectors">Secteurs</a>
+      <a href="#pricing" data-i18n="nav.pricing">Tarifs</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="lang-switch" id="langSwitch" aria-label="Choix de la langue">
+        <button type="button" class="lang-btn" data-lang="fr">FR</button>
+        <button type="button" class="lang-btn" data-lang="nl">NL</button>
+        <button type="button" class="lang-btn" data-lang="de">DE</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="#contact" class="btn btn-primary btn-sm" data-i18n="nav.cta">Demander une démo</a>
+      <button type="button" class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Réception IA pour PME</p>
+        <h1 data-i18n="hero.title">Ne manquez plus aucun appel</h1>
+        <p class="hero-sub" data-i18n="hero.sub">EZ receptionist répond à vos appels, accueille vos clients avec professionnalisme et prend en charge leurs rendez-vous — même quand vous êtes occupé. Elle ne passe le relais à votre équipe que lorsque c'est vraiment nécessaire.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary btn-lg" data-i18n="hero.ctaPrimary">Demander une démo gratuite</a>
+          <a href="#how" class="btn btn-ghost btn-lg" data-i18n="hero.ctaSecondary">Voir comment ça marche</a>
+        </div>
+        <p class="hero-trust" data-i18n="hero.trust">Conçu pour les PME qui veulent rester joignables, sans surcharge pour leurs équipes.</p>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="phone-card">
+          <div class="phone-card-top">
+            <span class="dot-status"></span>
+            <span class="phone-call-label" data-i18n="hero.card.live">Appel en cours</span>
+            <span class="phone-timer">00:18</span>
+          </div>
+          <div class="phone-transcript">
+            <div class="bubble bubble-bot">
+              <span data-i18n="hero.card.line1">Bonjour, cabinet Janssens, comment puis-je vous aider ?</span>
+            </div>
+            <div class="bubble bubble-user">
+              <span data-i18n="hero.card.line2">Bonjour, je voudrais un rendez-vous jeudi si possible.</span>
+            </div>
+            <div class="bubble bubble-bot">
+              <span data-i18n="hero.card.line3">Jeudi 10h30 est disponible. C'est à quel nom ?</span>
+            </div>
+            <div class="waveform" aria-hidden="true">
+              <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+          <div class="phone-card-chips">
+            <span class="chip chip-ok">✓ <span data-i18n="hero.card.chipBooked">RDV confirmé</span></span>
+            <span class="chip chip-sms">✉ <span data-i18n="hero.card.chipSms">SMS envoyé</span></span>
+          </div>
+        </div>
+        <div class="floating-card floating-card-1">
+          <span class="floating-emoji">📅</span>
+          <div>
+            <strong data-i18n="hero.float1.title">Jeu. 10:30</strong>
+            <small data-i18n="hero.float1.sub">Rendez-vous confirmé</small>
+          </div>
+        </div>
+        <div class="floating-card floating-card-2">
+          <span class="floating-emoji">👤</span>
+          <div>
+            <strong data-i18n="hero.float2.title">Relais humain</strong>
+            <small data-i18n="hero.float2.sub">Seulement si nécessaire</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-bar container">
+      <div class="stat"><strong>24/7</strong><span data-i18n="stats.availability">Disponibilité</span></div>
+      <div class="stat"><strong>&lt; 3s</strong><span data-i18n="stats.response">Temps de réponse</span></div>
+      <div class="stat"><strong>4</strong><span data-i18n="stats.languages">Langues gérées automatiquement</span></div>
+      <div class="stat"><strong>100%</strong><span data-i18n="stats.confirmation">Rendez-vous confirmés par SMS</span></div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="section problem">
+    <div class="container problem-grid">
+      <div>
+        <p class="eyebrow" data-i18n="problem.eyebrow">Chaque appel compte</p>
+        <h2 data-i18n="problem.title">Un appel manqué, c'est un client qui risque d'aller voir ailleurs</h2>
+        <p class="section-lead" data-i18n="problem.body">Votre équipe est occupée, en rendez-vous ou injoignable en dehors des heures d'ouverture. Résultat : des appels manqués, des créneaux perdus et des clients qui appellent l'entreprise suivante sur leur liste.</p>
+      </div>
+      <ul class="problem-list">
+        <li>
+          <span class="problem-ico">☎️</span>
+          <div>
+            <strong data-i18n="problem.item1.title">Appels manqués aux heures de pointe</strong>
+            <p data-i18n="problem.item1.body">Votre ligne est occupée pendant que votre équipe s'occupe des clients présents.</p>
+          </div>
+        </li>
+        <li>
+          <span class="problem-ico">🌙</span>
+          <div>
+            <strong data-i18n="problem.item2.title">Aucun appel pris en dehors des heures d'ouverture</strong>
+            <p data-i18n="problem.item2.body">Le soir, le week-end, les jours fériés : autant d'occasions manquées.</p>
+          </div>
+        </li>
+        <li>
+          <span class="problem-ico">📋</span>
+          <div>
+            <strong data-i18n="problem.item3.title">Un accueil sous pression</strong>
+            <p data-i18n="problem.item3.body">Trop de temps passé à répéter les mêmes informations et à confirmer des rendez-vous.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="features.eyebrow">Fonctionnalités</p>
+        <h2 data-i18n="features.title">Un accueil professionnel, à chaque appel</h2>
+        <p class="section-lead" data-i18n="features.lead">EZ receptionist prend en charge l'intégralité de l'appel : accueil, prise de rendez-vous, vérification du client et confirmation.</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="17" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.6"/><path d="M8 2v4M16 2v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M8 14l2.5 2.5L16 11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-i18n="features.f1.title">Prise de rendez-vous automatique</h3>
+          <p data-i18n="features.f1.body">Le bot comprend la demande, consulte votre agenda en temps réel et propose immédiatement un créneau disponible.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 19V6a2 2 0 012-2h8l6 6v9a2 2 0 01-2 2H6a2 2 0 01-2-2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M14 4v5a1 1 0 001 1h5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 13h8M8 17h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </div>
+          <h3 data-i18n="features.f2.title">Gestion complète de l'agenda</h3>
+          <p data-i18n="features.f2.body">Modification, annulation, rappel : votre planning est synchronisé à chaque appel, sans double réservation.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.6"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M16.5 8.5l1.4 1.4 2.6-2.9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-i18n="features.f3.title">Validation du client</h3>
+          <p data-i18n="features.f3.body">Nom, coordonnées, motif de l'appel : chaque client est identifié et vérifié avant la confirmation du rendez-vous.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><rect x="5" y="2.5" width="14" height="19" rx="2.2" stroke="currentColor" stroke-width="1.6"/><path d="M9 18.2h6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M8.5 7.5l2 2 4-4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-i18n="features.f4.title">Confirmation par SMS</h3>
+          <p data-i18n="features.f4.body">Un SMS de confirmation part automatiquement après chaque appel, avec un rappel avant la date du rendez-vous.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M22 16.9v2a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h2a2 2 0 012 1.7c.1.9.3 1.8.6 2.6a2 2 0 01-.5 2.1L7 9.6a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c.8.3 1.7.5 2.6.6a2 2 0 011.7 2z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-i18n="features.f5.title">Un relais humain, dès que nécessaire</h3>
+          <p data-i18n="features.f5.body">Demande complexe, urgente ou sensible : l'appel est transféré instantanément à votre équipe, avec le contexte complet.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9S9.5 5.5 12 3z" stroke="currentColor" stroke-width="1.6"/></svg>
+          </div>
+          <h3 data-i18n="features.f6.title">Multilingue par nature</h3>
+          <p data-i18n="features.f6.body">Vos clients sont accueillis en français, néerlandais, allemand ou anglais, détecté automatiquement.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section section-alt" id="how">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="how.eyebrow">Comment ça marche</p>
+        <h2 data-i18n="how.title">Un appel, quatre étapes, toujours le même accueil</h2>
+      </div>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num">1</span>
+          <h3 data-i18n="how.s1.title">Le client appelle votre numéro habituel</h3>
+          <p data-i18n="how.s1.body">Pas de nouveau numéro à communiquer : EZ receptionist se branche sur votre ligne existante.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">2</span>
+          <h3 data-i18n="how.s2.title">EZ receptionist décroche et comprend la demande</h3>
+          <p data-i18n="how.s2.body">Une conversation naturelle, dans la langue du client, pour cerner précisément le besoin.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">3</span>
+          <h3 data-i18n="how.s3.title">Rendez-vous pris, client validé, SMS envoyé</h3>
+          <p data-i18n="how.s3.body">L'agenda est mis à jour en temps réel et la confirmation part immédiatement par SMS.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">4</span>
+          <h3 data-i18n="how.s4.title">Relais vers un humain si nécessaire</h3>
+          <p data-i18n="how.s4.body">Pour toute demande hors périmètre, l'appel bascule vers votre équipe, contexte inclus.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ SECTORS ============ -->
+  <section class="section" id="sectors">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="sectors.eyebrow">Secteurs</p>
+        <h2 data-i18n="sectors.title">Conçu pour les métiers qui ne peuvent pas se permettre de rater un appel</h2>
+      </div>
+      <div class="sectors-grid">
+        <div class="sector-card"><span class="sector-emoji">🩺</span><span data-i18n="sectors.s1">Cabinets médicaux & paramédicaux</span></div>
+        <div class="sector-card"><span class="sector-emoji">💇</span><span data-i18n="sectors.s2">Salons de coiffure & instituts de beauté</span></div>
+        <div class="sector-card"><span class="sector-emoji">🚗</span><span data-i18n="sectors.s3">Garages & concessions automobiles</span></div>
+        <div class="sector-card"><span class="sector-emoji">🦷</span><span data-i18n="sectors.s4">Cabinets dentaires</span></div>
+        <div class="sector-card"><span class="sector-emoji">⚖️</span><span data-i18n="sectors.s5">Avocats & notaires</span></div>
+        <div class="sector-card"><span class="sector-emoji">🛠️</span><span data-i18n="sectors.s6">Artisans & PME de services</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRICING ============ -->
+  <section class="section section-alt" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow" data-i18n="pricing.eyebrow">Tarifs</p>
+        <h2 data-i18n="pricing.title">Une offre simple, adaptée à votre volume d'appels</h2>
+        <p class="section-lead" data-i18n="pricing.lead">Tarifs indicatifs : un devis personnalisé est établi selon votre activité et vos volumes d'appels.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3 data-i18n="pricing.starter.name">Starter</h3>
+          <p class="price-amount"><span>149€</span><small data-i18n="pricing.perMonth">/ mois</small></p>
+          <p class="price-desc" data-i18n="pricing.starter.desc">Pour démarrer avec l'essentiel de la prise de rendez-vous automatisée.</p>
+          <ul class="price-features">
+            <li data-i18n="pricing.starter.f1">Jusqu'à 150 appels / mois</li>
+            <li data-i18n="pricing.starter.f2">Prise de rendez-vous automatique</li>
+            <li data-i18n="pricing.starter.f3">Confirmation par SMS</li>
+            <li data-i18n="pricing.starter.f4">1 langue</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" data-i18n="pricing.cta">Choisir cette offre</a>
+        </div>
+
+        <div class="price-card price-card-featured">
+          <p class="price-badge" data-i18n="pricing.popular">Le plus populaire</p>
+          <h3 data-i18n="pricing.pro.name">Pro</h3>
+          <p class="price-amount"><span>349€</span><small data-i18n="pricing.perMonth">/ mois</small></p>
+          <p class="price-desc" data-i18n="pricing.pro.desc">Pour les équipes qui veulent ne plus jamais manquer un appel.</p>
+          <ul class="price-features">
+            <li data-i18n="pricing.pro.f1">Appels illimités</li>
+            <li data-i18n="pricing.pro.f2">4 langues : FR / NL / DE / EN</li>
+            <li data-i18n="pricing.pro.f3">Validation client avancée</li>
+            <li data-i18n="pricing.pro.f4">Transfert humain intelligent</li>
+            <li data-i18n="pricing.pro.f5">Tableau de bord & statistiques</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary" data-i18n="pricing.cta">Choisir cette offre</a>
+        </div>
+
+        <div class="price-card">
+          <h3 data-i18n="pricing.custom.name">Sur-mesure</h3>
+          <p class="price-amount"><span data-i18n="pricing.custom.amount">Sur devis</span></p>
+          <p class="price-desc" data-i18n="pricing.custom.desc">Pour les intégrations spécifiques et les grands volumes d'appels.</p>
+          <ul class="price-features">
+            <li data-i18n="pricing.custom.f1">Intégration à votre logiciel métier / CRM</li>
+            <li data-i18n="pricing.custom.f2">Gros volumes & multi-sites</li>
+            <li data-i18n="pricing.custom.f3">SLA dédié</li>
+            <li data-i18n="pricing.custom.f4">Accompagnement premium</li>
+          </ul>
+          <a href="#contact" class="btn btn-outline" data-i18n="pricing.customCta">Nous contacter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container faq-layout">
+      <div class="section-head faq-head">
+        <p class="eyebrow" data-i18n="faq.eyebrow">Questions fréquentes</p>
+        <h2 data-i18n="faq.title">Tout savoir avant de se lancer</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span data-i18n="faq.q1.q">Dois-je changer de numéro de téléphone ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer"><p data-i18n="faq.q1.a">Non. EZ receptionist se connecte à votre ligne existante, vos clients composent le même numéro qu'aujourd'hui.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span data-i18n="faq.q2.q">Combien de temps pour la mise en place ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer"><p data-i18n="faq.q2.a">En général une à deux semaines, selon la complexité de votre agenda et de vos outils actuels.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span data-i18n="faq.q3.q">Mes données clients sont-elles protégées ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer"><p data-i18n="faq.q3.a">Oui. Traitement conforme au RGPD, hébergement en Europe et chiffrement des données à chaque étape.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span data-i18n="faq.q4.q">Le bot gère-t-il plusieurs langues automatiquement ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer"><p data-i18n="faq.q4.a">Oui. La langue du client est détectée automatiquement parmi le français, le néerlandais, l'allemand et l'anglais.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span data-i18n="faq.q5.q">Que se passe-t-il si le bot ne peut pas répondre ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer"><p data-i18n="faq.q5.a">L'appel est transféré immédiatement à un membre de votre équipe, avec un résumé de la conversation.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span data-i18n="faq.q6.q">Puis-je essayer avant de m'engager ?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-answer"><p data-i18n="faq.q6.a">Oui, une démo gratuite et une période d'essai sont proposées avant tout engagement.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-copy">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Démo gratuite</p>
+        <h2 data-i18n="contact.title">Voyez EZ receptionist à l'œuvre sur vos propres cas d'usage</h2>
+        <p class="section-lead" data-i18n="contact.lead">Laissez-nous vos coordonnées, notre équipe vous recontacte sous 24h ouvrées pour organiser une démonstration personnalisée.</p>
+        <ul class="contact-points">
+          <li data-i18n="contact.p1">✔ Sans engagement</li>
+          <li data-i18n="contact.p2">✔ Installation sur votre ligne existante</li>
+          <li data-i18n="contact.p3">✔ Mise en place accompagnée</li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="firstName" data-i18n="contact.form.firstName">Prénom</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="form-field">
+            <label for="lastName" data-i18n="contact.form.lastName">Nom</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="company" data-i18n="contact.form.company">Société</label>
+            <input type="text" id="company" name="company">
+          </div>
+          <div class="form-field">
+            <label for="phone" data-i18n="contact.form.phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="email" data-i18n="contact.form.email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-field">
+          <label for="sector" data-i18n="contact.form.sector">Secteur d'activité</label>
+          <select id="sector" name="sector">
+            <option value="medical" data-i18n="contact.form.sectorMedical">Médical / paramédical</option>
+            <option value="beauty" data-i18n="contact.form.sectorBeauty">Coiffure / beauté</option>
+            <option value="auto" data-i18n="contact.form.sectorAuto">Garage / automobile</option>
+            <option value="legal" data-i18n="contact.form.sectorLegal">Avocat / notaire</option>
+            <option value="craft" data-i18n="contact.form.sectorCraft">Artisan / PME de services</option>
+            <option value="other" data-i18n="contact.form.sectorOther">Autre</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="message" data-i18n="contact.form.message">Message (facultatif)</label>
+          <textarea id="message" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block" data-i18n="contact.form.submit">Demander ma démo gratuite</button>
+        <p class="form-note" data-i18n="contact.form.note">En envoyant ce formulaire, vous acceptez d'être recontacté au sujet de votre demande.</p>
+        <p class="form-success" id="formSuccess" role="status" data-i18n="contact.form.success">Merci ! Votre demande a bien été envoyée, notre équipe vous recontacte très vite.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="brand">
+        <span class="brand-mark" aria-hidden="true">
+          <svg width="36" height="23" viewBox="0 0 200 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="14" y="48" width="14" height="34" rx="7" fill="#A7F3D0"/>
+            <rect x="34" y="30" width="14" height="70" rx="7" fill="#A7F3D0"/>
+            <rect x="156" y="30" width="14" height="70" rx="7" fill="#06B6D4"/>
+            <rect x="176" y="48" width="14" height="34" rx="7" fill="#06B6D4"/>
+            <circle cx="100" cy="63" r="46" fill="none" stroke="#A7F3D0" stroke-width="26" stroke-linecap="round" stroke-dasharray="112.4 400" transform="rotate(-160 100 63)"/>
+            <circle cx="100" cy="63" r="46" fill="none" stroke="#06B6D4" stroke-width="26" stroke-linecap="round" stroke-dasharray="112.4 400" transform="rotate(20 100 63)"/>
+          </svg>
+        </span>
+        <span class="brand-name"><span class="brand-name-strong">EZ</span> receptionist</span>
+      </a>
+      <p data-i18n="footer.tagline">Une réception IA moderne, rassurante et fiable pour les PME.</p>
+      <div class="lang-switch lang-switch-footer" aria-label="Choix de la langue">
+        <button type="button" class="lang-btn" data-lang="fr">FR</button>
+        <button type="button" class="lang-btn" data-lang="nl">NL</button>
+        <button type="button" class="lang-btn" data-lang="de">DE</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4 data-i18n="footer.product">Produit</h4>
+      <a href="#features" data-i18n="nav.features">Fonctionnalités</a>
+      <a href="#pricing" data-i18n="nav.pricing">Tarifs</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.company">Entreprise</h4>
+      <a href="#top" data-i18n="footer.about">À propos</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4 data-i18n="footer.legal">Légal</h4>
+      <a href="#" data-i18n="footer.terms">Mentions légales</a>
+      <a href="#" data-i18n="footer.privacy">Confidentialité</a>
+      <a href="#" data-i18n="footer.cgv">CGV</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p data-i18n="footer.copyright">© 2026 EZ receptionist. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<!-- ============ COOKIE BANNER ============ -->
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite">
+  <p data-i18n="cookie.text">Ce site utilise des cookies essentiels à son bon fonctionnement.</p>
+  <button type="button" class="btn btn-primary btn-sm" id="cookieAccept" data-i18n="cookie.accept">J'accepte</button>
+</div>
+
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
