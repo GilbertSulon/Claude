@@ -1,5 +1,5 @@
 /* ==========================================================
-   EZ receptionist — interactions
+   Nolus Consulting — interactions
    ========================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -59,18 +59,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const cookieBanner = document.getElementById('cookieBanner');
   const cookieAccept = document.getElementById('cookieAccept');
   if (cookieBanner && cookieAccept) {
-    if (!localStorage.getItem('ezreceptionist_cookie_consent')) {
+    if (!localStorage.getItem('nolus_cookie_consent')) {
       cookieBanner.classList.add('is-visible');
     }
     cookieAccept.addEventListener('click', () => {
-      localStorage.setItem('ezreceptionist_cookie_consent', '1');
+      localStorage.setItem('nolus_cookie_consent', '1');
       cookieBanner.classList.remove('is-visible');
     });
   }
 
   /* ---- Scroll reveal ---- */
   const revealTargets = document.querySelectorAll(
-    '.feature-card, .step, .price-card, .sector-card, .problem-list li'
+    '.feature-card, .step, .country-chip, .problem-list li'
   );
   revealTargets.forEach(el => el.setAttribute('data-reveal', ''));
 
