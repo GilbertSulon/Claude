@@ -188,6 +188,12 @@ button{ font-family: inherit; }
 }
 .hero h1{ font-size: clamp(2.1rem, 3.6vw, 3.1rem); margin-bottom: .45em; color: var(--text); }
 .hero-sub{ font-size: 1.08rem; max-width: 540px; }
+.role-badges{ display:flex; flex-wrap:wrap; gap:8px; margin: 18px 0 4px; }
+.role-badge{
+  font-size:.78rem; font-weight:700; color: var(--text-dim);
+  background: var(--surface); border:1px solid var(--border-strong);
+  border-radius: 999px; padding: 6px 13px;
+}
 .hero-ctas{ display:flex; gap:14px; flex-wrap: wrap; margin: 26px 0 18px; }
 .hero-trust{ font-size: .85rem; color: var(--text-mute); }
 
