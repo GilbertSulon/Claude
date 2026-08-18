@@ -140,6 +140,16 @@ button{ font-family: inherit; }
 
 .header-actions{ display:flex; align-items:center; gap: 14px; }
 
+.linkedin-btn{
+  display:inline-flex; align-items:center; gap:7px;
+  padding: 9px 15px; border-radius: 999px;
+  font-weight: 700; font-size: .85rem;
+  color: #0A66C2; background: rgba(10,102,194,.08); border: 1px solid rgba(10,102,194,.28);
+  transition: background-color .15s ease, border-color .15s ease;
+}
+.linkedin-btn:hover{ background: rgba(10,102,194,.16); border-color: rgba(10,102,194,.4); }
+.linkedin-btn svg{ flex:none; }
+
 .nav-toggle{
   display:none; flex-direction:column; justify-content:center; gap:5px;
   width: 40px; height: 40px; border-radius: 10px; border:1px solid var(--border);
@@ -163,6 +173,8 @@ button{ font-family: inherit; }
   display:grid; grid-template-columns: 1.05fr .95fr; gap: 56px;
   align-items:center;
 }
+.hero-inner-solo{ grid-template-columns: 1fr; }
+.hero-copy-solo{ max-width: 720px; }
 .eyebrow{
   display:inline-block;
   font-size: .78rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
@@ -317,6 +329,45 @@ button{ font-family: inherit; }
   margin: 32px 0 0;
 }
 .approach-note strong{ color: var(--text); }
+
+/* ---------- Track record ---------- */
+.trust-strip{ text-align:center; }
+.trust-strip strong{ color: var(--text); }
+
+.highlights-grid{
+  display:grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+  margin: 8px 0 56px;
+}
+.highlight-card{
+  background: var(--surface); border:1px solid var(--border);
+  border-radius: var(--radius-lg); padding: 26px; text-align:center;
+  box-shadow: var(--shadow-sm);
+}
+.highlight-card strong{
+  display:block; font-family: var(--font-display); font-size: 2rem; font-weight:700;
+  background: var(--accent-grad); -webkit-background-clip:text; background-clip:text; color:transparent;
+  margin-bottom: 10px;
+}
+.highlight-card p{ font-size: .88rem; margin:0; color: var(--text-dim); }
+
+.timeline{
+  display:flex; flex-direction:column; gap: 26px;
+  max-width: 760px; margin: 0 auto;
+  padding-left: 26px; border-left: 2px solid var(--border-strong);
+}
+.timeline li{ position:relative; }
+.timeline li::before{
+  content:""; position:absolute; left:-32px; top:5px;
+  width:12px; height:12px; border-radius:50%;
+  background: var(--accent-grad); border: 2px solid var(--surface);
+  box-shadow: 0 0 0 1px var(--border-strong);
+}
+.timeline-date{
+  display:inline-block; font-size:.76rem; font-weight:800; letter-spacing:.05em; text-transform:uppercase;
+  color: var(--accent-ink); margin-bottom: 4px;
+}
+.timeline h3{ font-size: 1.02rem; margin-bottom: 5px; color: var(--text); }
+.timeline p{ font-size: .9rem; margin:0; }
 
 /* ---------- Global reach ---------- */
 .reach-layout{ display:grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items:center; }
@@ -493,6 +544,7 @@ button{ font-family: inherit; }
   .problem-grid, .contact-grid, .faq-layout, .reach-layout{ grid-template-columns: 1fr; }
   .features-grid{ grid-template-columns: repeat(2, 1fr); }
   .steps{ grid-template-columns: repeat(2, 1fr); }
+  .highlights-grid{ grid-template-columns: repeat(2, 1fr); }
   .country-grid{ grid-template-columns: repeat(3, 1fr); }
   .footer-inner{ grid-template-columns: 1fr 1fr; }
 }
@@ -501,10 +553,12 @@ button{ font-family: inherit; }
   .container{ padding: 0 16px; }
   .header-actions .btn-sm{ display:none; }
   .header-actions{ gap: 8px; }
+  .linkedin-btn span{ display:none; }
+  .linkedin-btn{ padding: 9px; }
   .brand-logo{ height: 30px; }
   .hero{ padding-top: 56px; }
   .section{ padding: 64px 0; }
-  .features-grid, .steps{ grid-template-columns: 1fr; }
+  .features-grid, .steps, .highlights-grid{ grid-template-columns: 1fr; }
   .country-grid{ grid-template-columns: repeat(2, 1fr); }
   .form-row{ grid-template-columns: 1fr; }
   .footer-inner{ grid-template-columns: 1fr; }
