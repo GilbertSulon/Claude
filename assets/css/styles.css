@@ -125,24 +125,10 @@ button{ font-family: inherit; }
   gap: 20px;
 }
 
-/* ---------- Brand / wordmark ---------- */
-.brand{ display:flex; flex-direction:column; gap:2px; flex-shrink: 0; line-height:1; }
-.brand-word{
-  font-family: var(--font-display); font-weight: 700; font-size: 1.5rem;
-  letter-spacing: -0.01em; display:flex;
-}
-.brand-word span{ display:inline-block; }
-.brand-word .l-n{ color: var(--blue); }
-.brand-word .l-o{ color: var(--red); }
-.brand-word .l-l{ color: var(--green); }
-.brand-word .l-u{ color: var(--amber); }
-.brand-word .l-s{ color: var(--blue); }
-.brand-tagline{
-  font-size: .58rem; font-weight: 700; letter-spacing: .32em; text-transform: uppercase;
-  color: var(--text-mute); border-top: 2px solid var(--blue); padding-top: 3px; margin-left: 1px;
-}
-.brand-sm .brand-word{ font-size: 1.15rem; }
-.brand-sm .brand-tagline{ font-size: .5rem; letter-spacing: .26em; }
+/* ---------- Brand / logo ---------- */
+.brand{ display:flex; align-items:center; flex-shrink: 0; line-height:1; }
+.brand-logo{ height: 40px; width: auto; display:block; }
+.brand-sm .brand-logo{ height: 32px; }
 
 .main-nav{ display:flex; align-items:center; gap: 24px; flex-shrink: 0; }
 .main-nav a{
@@ -326,6 +312,11 @@ button{ font-family: inherit; }
 }
 .step h3{ font-size: 1rem; margin-bottom: 6px; color: var(--text); }
 .step p{ font-size: .88rem; margin:0; }
+.approach-note{
+  text-align:center; font-size:.92rem; color: var(--text-dim);
+  margin: 32px 0 0;
+}
+.approach-note strong{ color: var(--text); }
 
 /* ---------- Global reach ---------- */
 .reach-layout{ display:grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items:center; }
@@ -407,7 +398,7 @@ button{ font-family: inherit; }
   display:grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px;
   padding-bottom: 40px;
 }
-.footer-brand .brand-tagline{ color: #8B96AE; border-top-color: var(--blue); }
+.footer-brand .brand-logo{ height: 46px; }
 .footer-brand p{ font-size:.88rem; max-width: 280px; margin: 14px 0 0; }
 .footer-col h4{ font-family: var(--font-display); font-size:.85rem; text-transform:uppercase; letter-spacing:.04em; color: #7C8AA6; margin-bottom: 14px; }
 .footer-col{ display:flex; flex-direction:column; gap: 10px; }
@@ -510,7 +501,7 @@ button{ font-family: inherit; }
   .container{ padding: 0 16px; }
   .header-actions .btn-sm{ display:none; }
   .header-actions{ gap: 8px; }
-  .brand-word{ font-size: 1.25rem; }
+  .brand-logo{ height: 30px; }
   .hero{ padding-top: 56px; }
   .section{ padding: 64px 0; }
   .features-grid, .steps{ grid-template-columns: 1fr; }
