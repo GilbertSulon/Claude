@@ -1,0 +1,14 @@
+Bonjour {business_name},
+
+Je me permets de vous contacter au sujet de {service_name}, qui pourrait
+vous intéresser dans le cadre de votre activité.
+
+[Décrivez ici en 2-3 phrases la valeur concrète de votre service pour ce
+type d'établissement.]
+
+N'hésitez pas à me répondre si vous souhaitez en discuter.
+
+Cordialement,
+
+--
+{unsubscribe_note}
