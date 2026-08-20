@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <script src="assets/js/maintenance-check.js" data-mode="maintenance"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>EZ receptionist — Maintenance</title>
-<meta name="description" content="Ce site est temporairement en maintenance. Merci de votre patience, nous revenons très vite.">
+<title>Nolus Consulting — Maintenance</title>
+<meta name="description" content="This site is temporarily under maintenance. Thank you for your patience, we'll be back very soon.">
 <meta name="robots" content="noindex">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 130%22><rect x=%2214%22 y=%2248%22 width=%2214%22 height=%2234%22 rx=%227%22 fill=%22%2383CAA8%22/><rect x=%2234%22 y=%2230%22 width=%2214%22 height=%2270%22 rx=%227%22 fill=%22%2383CAA8%22/><rect x=%22156%22 y=%2230%22 width=%2214%22 height=%2270%22 rx=%227%22 fill=%22%2306B6D4%22/><rect x=%22176%22 y=%2248%22 width=%2214%22 height=%2234%22 rx=%227%22 fill=%22%2306B6D4%22/><circle cx=%22100%22 cy=%2263%22 r=%2246%22 fill=%22none%22 stroke=%22%230F172A%22 stroke-width=%2226%22 stroke-linecap=%22round%22 stroke-dasharray=%22112.4 400%22 transform=%22rotate(-160 100 63)%22/><circle cx=%22100%22 cy=%2263%22 r=%2246%22 fill=%22none%22 stroke=%22%2306B6D4%22 stroke-width=%2226%22 stroke-linecap=%22round%22 stroke-dasharray=%22112.4 400%22 transform=%22rotate(20 100 63)%22/></svg>">
+<link rel="icon" type="image/png" href="assets/img/favicon-n.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -20,103 +20,19 @@
 
   <div class="maintenance-card">
     <a href="index.html" class="brand maintenance-brand">
-      <span class="brand-mark" aria-hidden="true">
-        <svg width="36" height="23" viewBox="0 0 200 130" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="14" y="48" width="14" height="34" rx="7" fill="#83CAA8"/>
-          <rect x="34" y="30" width="14" height="70" rx="7" fill="#83CAA8"/>
-          <rect x="156" y="30" width="14" height="70" rx="7" fill="#06B6D4"/>
-          <rect x="176" y="48" width="14" height="34" rx="7" fill="#06B6D4"/>
-          <circle cx="100" cy="63" r="46" fill="none" stroke="#0F172A" stroke-width="26" stroke-linecap="round" stroke-dasharray="112.4 400" transform="rotate(-160 100 63)"/>
-          <circle cx="100" cy="63" r="46" fill="none" stroke="#06B6D4" stroke-width="26" stroke-linecap="round" stroke-dasharray="112.4 400" transform="rotate(20 100 63)"/>
-        </svg>
-      </span>
-      <span class="brand-name"><span class="brand-name-strong">EZ</span> receptionist</span>
+      <img class="brand-logo" src="assets/img/nolus-logo.png" alt="Nolus Consulting" width="222" height="90">
     </a>
 
     <div class="maintenance-icon" aria-hidden="true">
-      <svg viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 005.4-5.4l-2.65 2.65a1.5 1.5 0 01-2.1-2.1L14.7 6.3z" stroke="#0E7490" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <svg viewBox="0 0 24 24" fill="none"><path d="M14.7 6.3a4 4 0 00-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 005.4-5.4l-2.65 2.65a1.5 1.5 0 01-2.1-2.1L14.7 6.3z" stroke="#1D4ED8" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></svg>
     </div>
 
-    <p class="eyebrow" data-i18n="maint.eyebrow">Maintenance en cours</p>
-    <h1 data-i18n="maint.title">Nous serons de retour très bientôt</h1>
-    <p data-i18n="maint.body">Notre site est actuellement en maintenance afin d'améliorer votre expérience. Merci de votre patience.</p>
+    <p class="eyebrow">Under maintenance</p>
+    <h1>We'll be back very soon</h1>
+    <p>Our site is currently undergoing maintenance to improve your experience. Thank you for your patience — we'll be back shortly.</p>
     <div class="maintenance-dots" aria-hidden="true"><span></span><span></span><span></span></div>
-
-    <div class="lang-switch" aria-label="Choix de la langue">
-      <button type="button" class="lang-btn" data-lang="fr">FR</button>
-      <button type="button" class="lang-btn" data-lang="nl">NL</button>
-      <button type="button" class="lang-btn" data-lang="de">DE</button>
-      <button type="button" class="lang-btn" data-lang="en">EN</button>
-    </div>
   </div>
 </div>
 
-<script>
-  var SUPPORTED_LANGS = ['fr', 'nl', 'de', 'en'];
-  var DEFAULT_LANG = 'fr';
-
-  var MAINT_I18N = {
-    fr: {
-      "meta.title": "EZ receptionist — Maintenance",
-      "meta.description": "Ce site est temporairement en maintenance. Merci de votre patience, nous revenons très vite.",
-      "maint.eyebrow": "Maintenance en cours",
-      "maint.title": "Nous serons de retour très bientôt",
-      "maint.body": "Notre site est actuellement en maintenance afin d'améliorer votre expérience. Merci de votre patience, nous revenons très vite."
-    },
-    nl: {
-      "meta.title": "EZ receptionist — Onderhoud",
-      "meta.description": "Deze site is tijdelijk in onderhoud. Bedankt voor uw geduld, we zijn binnenkort terug.",
-      "maint.eyebrow": "Onderhoud bezig",
-      "maint.title": "We zijn zo snel mogelijk terug",
-      "maint.body": "Onze site ondergaat momenteel onderhoud om uw ervaring te verbeteren. Bedankt voor uw geduld, we zijn binnenkort terug."
-    },
-    de: {
-      "meta.title": "EZ receptionist — Wartungsarbeiten",
-      "meta.description": "Diese Website befindet sich vorübergehend in Wartung. Vielen Dank für Ihre Geduld, wir sind bald wieder da.",
-      "maint.eyebrow": "Wartungsarbeiten",
-      "maint.title": "Wir sind bald wieder da",
-      "maint.body": "Unsere Website wird derzeit gewartet, um Ihr Erlebnis zu verbessern. Vielen Dank für Ihre Geduld — wir sind in Kürze wieder online."
-    },
-    en: {
-      "meta.title": "EZ receptionist — Maintenance",
-      "meta.description": "This site is temporarily under maintenance. Thank you for your patience, we'll be back very soon.",
-      "maint.eyebrow": "Under maintenance",
-      "maint.title": "We'll be back very soon",
-      "maint.body": "Our site is currently undergoing maintenance to improve your experience. Thank you for your patience — we'll be back shortly."
-    }
-  };
-
-  function getInitialLang() {
-    var stored = localStorage.getItem('ezreceptionist_lang');
-    if (stored && SUPPORTED_LANGS.indexOf(stored) !== -1) return stored;
-    var nav = (navigator.language || navigator.userLanguage || '').slice(0, 2).toLowerCase();
-    if (SUPPORTED_LANGS.indexOf(nav) !== -1) return nav;
-    return DEFAULT_LANG;
-  }
-
-  function applyLang(lang) {
-    if (SUPPORTED_LANGS.indexOf(lang) === -1) lang = DEFAULT_LANG;
-    var dict = MAINT_I18N[lang];
-    document.querySelectorAll('[data-i18n]').forEach(function (el) {
-      var key = el.getAttribute('data-i18n');
-      if (dict[key] !== undefined) el.textContent = dict[key];
-    });
-    if (dict['meta.title']) document.title = dict['meta.title'];
-    var metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc && dict['meta.description']) metaDesc.setAttribute('content', dict['meta.description']);
-    document.documentElement.setAttribute('lang', lang);
-    document.querySelectorAll('.lang-btn').forEach(function (btn) {
-      btn.classList.toggle('is-active', btn.getAttribute('data-lang') === lang);
-    });
-    localStorage.setItem('ezreceptionist_lang', lang);
-  }
-
-  document.addEventListener('DOMContentLoaded', function () {
-    applyLang(getInitialLang());
-    document.querySelectorAll('.lang-btn').forEach(function (btn) {
-      btn.addEventListener('click', function () { applyLang(btn.getAttribute('data-lang')); });
-    });
-  });
-</script>
 </body>
 </html>

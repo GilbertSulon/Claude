@@ -1,5 +1,5 @@
 /* ==========================================================
-   EZ receptionist — interactions
+   Nolus Consulting — interactions
    ========================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ---- Contact form (front-end only) ---- */
+  /* ---- Contact form (mailto handoff — no backend) ---- */
   const contactForm = document.getElementById('contactForm');
   const formSuccess = document.getElementById('formSuccess');
   if (contactForm && formSuccess) {
@@ -47,10 +47,21 @@ document.addEventListener('DOMContentLoaded', () => {
         contactForm.reportValidity();
         return;
       }
-      // No backend wired up yet — replace with a real submission
-      // (e.g. POST to your API, Netlify Forms, Formspree...).
+      const data = new FormData(contactForm);
+      const topicLabel = contactForm.querySelector('#topic').selectedOptions[0]?.textContent || '';
+      const lines = [
+        `Name: ${data.get('firstName')} ${data.get('lastName')}`,
+        data.get('company') ? `Company: ${data.get('company')}` : null,
+        data.get('phone') ? `Phone: ${data.get('phone')}` : null,
+        `Email: ${data.get('email')}`,
+        `Topic: ${topicLabel}`,
+        '',
+        data.get('message')
+      ].filter(Boolean).join('\n');
+      const subject = `Nolus Consulting enquiry — ${data.get('firstName')} ${data.get('lastName')}`;
+      window.location.href = `mailto:info@nolus.net?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(lines)}`;
+      formSuccess.textContent = 'Opening your email client to send this to info@nolus.net — please hit send there to complete your request.';
       formSuccess.classList.add('is-visible');
-      contactForm.reset();
       formSuccess.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     });
   }
@@ -59,18 +70,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const cookieBanner = document.getElementById('cookieBanner');
   const cookieAccept = document.getElementById('cookieAccept');
   if (cookieBanner && cookieAccept) {
-    if (!localStorage.getItem('ezreceptionist_cookie_consent')) {
+    if (!localStorage.getItem('nolus_cookie_consent')) {
       cookieBanner.classList.add('is-visible');
     }
     cookieAccept.addEventListener('click', () => {
-      localStorage.setItem('ezreceptionist_cookie_consent', '1');
+      localStorage.setItem('nolus_cookie_consent', '1');
       cookieBanner.classList.remove('is-visible');
     });
   }
 
   /* ---- Scroll reveal ---- */
   const revealTargets = document.querySelectorAll(
-    '.feature-card, .step, .price-card, .sector-card, .problem-list li'
+    '.feature-card, .step, .country-chip, .problem-list li'
   );
   revealTargets.forEach(el => el.setAttribute('data-reveal', ''));
 

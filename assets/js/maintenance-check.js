@@ -1,5 +1,5 @@
 /* ==========================================================
-   EZ receptionist — maintenance mode switch
+   Nolus Consulting — maintenance mode switch
    Reads maintenance.txt (content: ON or OFF) and redirects
    between the live site and maintenance.html accordingly.
    Usage: <script src="assets/js/maintenance-check.js" data-mode="site"></script>
